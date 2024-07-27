@@ -1,5 +1,5 @@
 app.message: Hola mundo desde gateway
-server.port: 8080
+server.port: 8090
 
 eureka:
   client:
@@ -15,7 +15,7 @@ spring:
   cloud:
     gateway:
       routes:
-        # MICROSERVICIO customers http://localhost:8080/customers/hello
+        # MICROSERVICIO customers http://localhost:8080/customers-service/hello
         - id: customers-service
           uri: lb://customers-service
           predicates:
