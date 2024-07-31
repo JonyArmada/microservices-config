@@ -1,5 +1,5 @@
 app.message: Hola mundo desde directions service
-server.port: 9000
+server.port: 9010
 
 eureka:
   client:
