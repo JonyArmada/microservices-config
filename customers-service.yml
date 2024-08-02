@@ -25,3 +25,9 @@ resilience4j.circuitbreaker:
       failureRateThreshold: 50
       ignoreExceptions:
         - com.example.exception.BusinessException
+        
+resilience4j.timelimiter:
+  instances:
+    directionsTL:
+    timeoutDuration: 3s
+    cancelRunningFuture: true
